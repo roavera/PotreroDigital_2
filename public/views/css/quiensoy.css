@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+/*Estilos comunes*/
+
+body{
+    margin: 0;
+    padding: 0; 
+    font-family: Familjen Grotesk;
+    font-size: 16px;
+    background-color: darkgrey;
+}
+
+img{
+    border-radius: 10px;
+}
+
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main{
+    flex-basis: 68%;
+    height: auto;
+    background-color: rgba(206, 204, 204, 0.938);
+    padding: 10px;
+    align-self: center;
+    text-align: center;
+}
+
+main .h1{
+    text-decoration: underline;
+}
+
+aside{
+    flex-basis: 32%;
+    height: auto; 
+    width: auto;
+    background-color:black;
+    padding: 5px;
+}
+
+@media (max-width:800px){
+    .principal{
+        flex-direction: column;
+        display: grid;
+    }
+}
+
+/*Estilo de Footer*/
+footer{
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.555);
+    color:whitesmoke; 
+}
+
+@media (min-width:1218px){
+    footer{
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+}
